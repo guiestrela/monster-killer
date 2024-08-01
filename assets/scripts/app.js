@@ -25,4 +25,4 @@ function attackHandler() {
     }
 }
 
-attackBtn.addEventListener('click', attackHandler);    
+attackBtn.addEventListener('click', attackHandler);
