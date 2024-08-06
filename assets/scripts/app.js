@@ -161,7 +161,25 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-    console.log(battleLog);
+    for (let i = 0; i < 3; i++) {
+        console.log('-----');
+    }
+
+    // for (let i = 10; i < 0;){
+    //     i++;
+    //     console.log(battleLog[1])
+    // }
+    // for (let i = 0; i < battleLog.length; i++) {
+    //     confirm(battleLog[1]);
+    // }
+    let i = 0;
+    for (const logEntry in battleLog) {
+        console.log(`#${i}`);
+        for (const key in logEntry) {
+            console.log(`${key} => ${logEntry[key]}`);
+        }    
+        i++;
+    }
 }
 
 attackBtn.addEventListener('click', attackHandler);
